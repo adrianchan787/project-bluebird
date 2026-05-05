@@ -13,7 +13,7 @@ public class Pivot : MonoBehaviour
     public Rotor pitchRotor;
     public Rotor thrustRotor;
     public PitchMotor pitchMotor;
-    private Vector3 com = new Vector3(0, 0, LOCALCENTROID);
+    private Vector3 com = new Vector3(0, (float) 0, LOCALCENTROID);
 
     private Vector3 calcCOM() {
         Vector3 pitchMotorPos = pitchMotor.transform.localPosition;
@@ -23,12 +23,16 @@ public class Pivot : MonoBehaviour
         return com + COMOffset;
     }
 
+    public static float thrustRatio(Rotor rotor) {
+        return 1.0f / (Rotor.MAXDISPLAYSPEED / rotor.speed) / (Rotor.MAXDISPLAYSPEED / Math.Abs(rotor.speed));
+    }
+
     private void simulateMotor(Rotor rotor) {
         float thrustPower;
         if (rotor.speed == 0) {
             thrustPower = 0;
         } else {
-            thrustPower = Rotor.MAXPOWER / (Rotor.MAXDISPLAYSPEED / rotor.speed) / (Rotor.MAXDISPLAYSPEED / rotor.speed);
+            thrustPower = Rotor.MAXPOWER * thrustRatio(rotor);
         }
         rb.AddForceAtPosition(rotor.transform.up * thrustPower, rotor.transform.position, ForceMode.Force);
         float torque = Rotor.DRAGCOEFF * Rotor.AIRDENSITY * (float) Math.Pow((rotor.speed * Math.PI / 180) * (Rotor.MAXRPM * 6 / Rotor.MAXDISPLAYSPEED) / 60, 2) * (float) Math.Pow(Rotor.ROTORDIAMETER, 5);
@@ -46,6 +50,6 @@ public class Pivot : MonoBehaviour
         simulateMotor(leftRotor);
         simulateMotor(rightRotor);
         simulateMotor(pitchRotor);        
-
+        simulateMotor(thrustRotor);
     }
 }
