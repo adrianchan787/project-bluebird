@@ -22,10 +22,10 @@ public class UIScript : MonoBehaviour {
 
 
     public void updateDashboard(Pivot pivot) {
-        float LTval = 100f * Pivot.thrustRatio(pivot.leftRotor);
-        float RTval = 100f * Pivot.thrustRatio(pivot.rightRotor);
-        float PTval = 100f * Pivot.thrustRatio(pivot.pitchRotor);
-        float TTval = 100f * Pivot.thrustRatio(pivot.thrustRotor);
+        float LTval = 100f * pivot.leftRotor.thrustRatio;
+        float RTval = 100f * pivot.rightRotor.thrustRatio;
+        float PTval = 100f * pivot.pitchRotor.thrustRatio;
+        float TTval = 100f * pivot.thrustRotor.thrustRatio;
         LT.text = LTval.ToString("F4");
         RT.text = RTval.ToString("F4");
         PT.text = PTval.ToString("F4");

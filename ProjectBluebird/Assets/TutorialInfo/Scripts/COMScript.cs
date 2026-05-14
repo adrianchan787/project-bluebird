@@ -1,6 +1,6 @@
 using UnityEngine;
-using System;
 using UnityEngine.InputSystem;
+using System;
 
 public class Pivot : MonoBehaviour
 {
@@ -23,21 +23,9 @@ public class Pivot : MonoBehaviour
         return com + COMOffset;
     }
 
-    public static float thrustRatio(Rotor rotor) {
-        return 1.0f / (Rotor.MAXDISPLAYSPEED / rotor.speed) / (Rotor.MAXDISPLAYSPEED / Math.Abs(rotor.speed));
-    }
-
     private void simulateMotor(Rotor rotor) {
-        float thrustPower;
-        if (rotor.speed == 0) {
-            thrustPower = 0;
-        } else {
-            thrustPower = Rotor.MAXPOWER * thrustRatio(rotor);
-        }
-        rb.AddForceAtPosition(rotor.transform.up * thrustPower, rotor.transform.position, ForceMode.Force);
-        float torque = Rotor.DRAGCOEFF * Rotor.AIRDENSITY * (float) Math.Pow((rotor.speed * Math.PI / 180) * (Rotor.MAXRPM * 6 / Rotor.MAXDISPLAYSPEED) / 60, 2) * (float) Math.Pow(Rotor.ROTORDIAMETER, 5);
-        float cw = rotor.clockwise ? 1.0f : -1.0f;
-        rb.AddTorque(rotor.transform.up * torque * cw);
+        rb.AddForceAtPosition(transform.up * rotor.thrustRatio * Rotor.MAXPOWER, rotor.transform.position, ForceMode.Force);
+        rb.AddTorque(transform.up * rotor.torque);
     }
 
     void Start() {
