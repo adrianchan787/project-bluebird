@@ -6335,6 +6335,12 @@ MonoBehaviour:
   pitchRotor: {fileID: 1853386653}
   thrustRotor: {fileID: 959895173}
   pitchMotor: {fileID: 1758475607}
+  pos: {x: 0, y: 0, z: 0}
+  vel: {x: 0, y: 0, z: 0}
+  accel: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0, w: 0}
+  aVel: {x: 0, y: 0, z: 0}
+  aAccel: {x: 0, y: 0, z: 0}
 --- !u!4 &76334606
 Transform:
   m_ObjectHideFlags: 0
@@ -9224,7 +9230,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 2150773298
   m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -9237,7 +9243,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -10039,7 +10045,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "InYaw\u200B"
+  m_text: "ALT\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10587,7 +10593,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "InPitch\u200B"
+  m_text: "GRSP\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12108,7 +12114,7 @@ GameObject:
   - component: {fileID: 435347018}
   - component: {fileID: 435347017}
   m_Layer: 5
-  m_Name: InPitch
+  m_Name: GRSP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12220,7 +12226,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: InPitch
+  m_Text: GRSP
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 1
@@ -29092,7 +29098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959895171}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -29112,7 +29118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d850e42f1663c7b44b50e31f41aa28d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rotor
-  clockwise: 1
+  clockwise: 0
   pRot: {fileID: 4836935690459096929, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   nRot: {fileID: -404964344014762425, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   thrustRatio: 0
@@ -31519,7 +31525,7 @@ GameObject:
   - component: {fileID: 1336904911}
   - component: {fileID: 1336904910}
   m_Layer: 5
-  m_Name: InRoll
+  m_Name: HEAD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31631,7 +31637,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: InRoll
+  m_Text: HEAD
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 1
@@ -32822,7 +32828,7 @@ GameObject:
   - component: {fileID: 1470217083}
   - component: {fileID: 1470217082}
   m_Layer: 5
-  m_Name: InCR
+  m_Name: PosX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32934,7 +32940,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 'InCR
+  m_Text: 'PosX
 
 '
   m_CaretBlinkRate: 0.85
@@ -33656,7 +33662,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "InThrust\n\u200B"
+  m_text: "PosY\n\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -34810,7 +34816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "AARoll\u200B"
+  m_text: "AAPitch\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39458,7 +39464,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: AARoll
+  m_Text: AAPitch
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 1
@@ -42534,7 +42540,7 @@ GameObject:
   - component: {fileID: 1817284728}
   - component: {fileID: 1817284727}
   m_Layer: 5
-  m_Name: InThrust
+  m_Name: PosY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42646,7 +42652,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 'InThrust
+  m_Text: 'PosY
 
 '
   m_CaretBlinkRate: 0.85
@@ -42962,7 +42968,7 @@ GameObject:
   - component: {fileID: 1834155330}
   - component: {fileID: 1834155329}
   m_Layer: 5
-  m_Name: InYaw
+  m_Name: ALT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43074,7 +43080,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: InYaw
+  m_Text: ALT
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 1
@@ -43520,7 +43526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "InRoll\u200B"
+  m_text: "HEAD\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -45693,7 +45699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "InCR\n\u200B"
+  m_text: "PosX\n\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -46626,7 +46632,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112775433}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -46882,17 +46888,22 @@ MonoBehaviour:
   RT: {fileID: 938988980}
   PT: {fileID: 226058294}
   TT: {fileID: 771564867}
-  VV: {fileID: 0}
-  VA: {fileID: 0}
-  Yaw: {fileID: 0}
-  Pitch: {fileID: 0}
-  Roll: {fileID: 0}
-  AVYaw: {fileID: 0}
-  AVPitch: {fileID: 0}
-  AVRoll: {fileID: 0}
-  AAYaw: {fileID: 0}
-  AAPitch: {fileID: 0}
-  AARoll: {fileID: 0}
+  VV: {fileID: 162421859}
+  VA: {fileID: 232917582}
+  Yaw: {fileID: 1581593084}
+  Pitch: {fileID: 1900307379}
+  Roll: {fileID: 1103716164}
+  AVYaw: {fileID: 191373431}
+  AVPitch: {fileID: 74641560}
+  AVRoll: {fileID: 1562673865}
+  AAYaw: {fileID: 23083700}
+  AAPitch: {fileID: 2091095726}
+  AARoll: {fileID: 2109004126}
+  PosX: {fileID: 1378476151}
+  PosY: {fileID: 690985675}
+  ALT: {fileID: 878235357}
+  GRSP: {fileID: 1839188145}
+  HEAD: {fileID: 696302659}
 --- !u!4 &2137791730
 Transform:
   m_ObjectHideFlags: 0

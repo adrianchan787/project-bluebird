@@ -65,7 +65,7 @@ public class Rotor : MonoBehaviour
             if (pRot.action.IsPressed()) { 
                 speed += INCREMENT;
             } else if (nRot.action.IsPressed()) {
-                speed -= DECREMENT;
+                speed = 0;
             }
         }
 
