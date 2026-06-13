@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7222677903824311438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4044286431469005396}
+  - component: {fileID: 8162424656946945528}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4044286431469005396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7222677903824311438}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.86282, z: -0.71634}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8162424656946945528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7222677903824311438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f24e876ca922d4c83e7b172942c283, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIScript
+  body: {fileID: 0}
+  LT: {fileID: 0}
+  RT: {fileID: 0}
+  PT: {fileID: 0}
+  TT: {fileID: 0}
+  VV: {fileID: 0}
+  VA: {fileID: 0}
+  Yaw: {fileID: 0}
+  Pitch: {fileID: 0}
+  Roll: {fileID: 0}
+  AVYaw: {fileID: 0}
+  AVPitch: {fileID: 0}
+  AVRoll: {fileID: 0}
+  AAYaw: {fileID: 0}
+  AAPitch: {fileID: 0}
+  AARoll: {fileID: 0}
+  PosX: {fileID: 0}
+  PosY: {fileID: 0}
+  ALT: {fileID: 0}
+  GRSP: {fileID: 0}
+  HEAD: {fileID: 0}
+  SDEG: {fileID: 0}

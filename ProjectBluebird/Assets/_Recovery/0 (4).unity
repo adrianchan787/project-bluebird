@@ -5956,10 +5956,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d3e511b5204194793bac45d523018f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlightController
+  ir: {fileID: 0}
   pivot: {fileID: 76334605}
-  v_gain: 0
+  debug_p: 0
+  debug_i: 0
+  debug_d: 0
+  debug_total: 0
+  debug_targetv: 0
   integratedPitchError: 0
-  integratedVYawError: 0
+  integratedVPitchError: 0
 --- !u!1 &97389281
 GameObject:
   m_ObjectHideFlags: 0
@@ -22950,8 +22955,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Rotor
   speed: 0
   clockwise: 0
-  pRot: {fileID: 3945043783482440328, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  nRot: {fileID: -6927824437303799129, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   thrustRatio: 0
   torque: 0
 --- !u!1 &714933450
@@ -26266,8 +26269,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Rotor
   speed: 0
   clockwise: 0
-  pRot: {fileID: 4836935690459096929, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  nRot: {fileID: -404964344014762425, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   thrustRatio: 0
   torque: 0
 --- !u!1 &967313627
@@ -27682,8 +27683,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Rotor
   speed: 0
   clockwise: 1
-  pRot: {fileID: 3945043783482440328, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  nRot: {fileID: -6927824437303799129, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   thrustRatio: 0
   torque: 0
 --- !u!1 &1109758775
@@ -40650,8 +40649,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Rotor
   speed: 0
   clockwise: 1
-  pRot: {fileID: 3945043783482440328, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  nRot: {fileID: -6927824437303799129, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   thrustRatio: 0
   torque: 0
 --- !u!1 &1862544907

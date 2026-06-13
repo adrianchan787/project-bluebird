@@ -88,7 +88,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "LeftRotPos",
+                    "name": "VV_p",
                     "type": "Value",
                     "id": "10eae6e9-139d-46ab-b430-f2bd574dd097",
                     "expectedControlType": "",
@@ -97,7 +97,16 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "PitchRotPos",
+                    "name": "HV_p",
+                    "type": "Value",
+                    "id": "c16338d1-0a75-4160-bff7-b9ee2e15c9e8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "P_p",
                     "type": "Value",
                     "id": "0bfe4af8-a246-497e-8a60-8118b0ef0740",
                     "expectedControlType": "",
@@ -106,7 +115,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "ThrustRotPos",
+                    "name": "R_p",
                     "type": "Value",
                     "id": "244ebe9b-9aee-4004-a3a7-2e1de80c54ef",
                     "expectedControlType": "",
@@ -115,7 +124,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "RightRotPos",
+                    "name": "Y_p",
                     "type": "Value",
                     "id": "ea296b14-6ab5-4e53-926f-bf8ff5af610c",
                     "expectedControlType": "",
@@ -124,7 +133,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "LeftRotNeg",
+                    "name": "VV_n",
                     "type": "Value",
                     "id": "13a6e616-9b9e-4fc5-bb62-53ac40866267",
                     "expectedControlType": "",
@@ -133,7 +142,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "RightRotNeg",
+                    "name": "P_n",
                     "type": "Value",
                     "id": "8ba1a3c2-7857-492e-8125-b7625afbad7d",
                     "expectedControlType": "",
@@ -142,7 +151,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "PitchRotNeg",
+                    "name": "R_n",
                     "type": "Value",
                     "id": "93c08acd-530a-43b4-ad15-828f1b5bed87",
                     "expectedControlType": "",
@@ -151,9 +160,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "ThrustRotNeg",
+                    "name": "Y_n",
                     "type": "Value",
                     "id": "3e684f80-40e8-40f1-b9e9-db8a2f6ee95d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "HV_n",
+                    "type": "Value",
+                    "id": "88060954-967e-488f-9d55-3814732046f5",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press",
@@ -553,7 +571,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftRotPos",
+                    "action": "VV_p",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f3a1ad63-a6ef-4f89-ab53-1f7264447832",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HV_p",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -564,7 +593,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PitchRotPos",
+                    "action": "P_p",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -575,7 +604,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ThrustRotPos",
+                    "action": "R_p",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -586,7 +615,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RightRotPos",
+                    "action": "Y_p",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -597,7 +626,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftRotNeg",
+                    "action": "VV_n",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -608,7 +637,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RightRotNeg",
+                    "action": "P_n",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -619,7 +648,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PitchRotNeg",
+                    "action": "R_n",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -630,7 +659,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ThrustRotNeg",
+                    "action": "Y_n",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "55b8666a-921f-4e3f-ace9-0b43e2f432dd",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HV_n",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
