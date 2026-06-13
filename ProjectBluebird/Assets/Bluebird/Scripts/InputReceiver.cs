@@ -109,7 +109,7 @@ public class InputReceiver : MonoBehaviour
                 expected_pitch = 0.0f;
                 expected_roll = 0.0f;
                 expected_yaw = 0.0f;
-                expected_hztlv = 0f;
+                expected_hztlv = 0.0f;
             }
         }
     }

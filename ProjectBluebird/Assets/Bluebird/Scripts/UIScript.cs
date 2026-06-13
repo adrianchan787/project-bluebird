@@ -3,9 +3,10 @@ using TMPro;
 using System;
 
 public class UIScript : MonoBehaviour {
-    public Pivot body;
+    [SerializeField] private Pivot body;
+    [SerializeField] private Config c;
 
-    [SerializeField] private TMP_InputField LT, RT, PT, TT, VV, VA, Yaw, Pitch, Roll, AVYaw, AVPitch, AVRoll, AAYaw, AAPitch, AARoll, PosX, PosY, ALT, GRSP, HEAD, SDEG;
+    [SerializeField] private TMP_InputField LT, RT, PT, TT, VV, VA, Yaw, Pitch, Roll, AVYaw, AVPitch, AVRoll, AAYaw, AAPitch, AARoll, PosX, PosY, ALT, GRSP, HEAD, SDEG, COMX, COMY, COMZ;
 
 
     private void updateDashboard(Pivot pivot) {
@@ -55,7 +56,7 @@ public class UIScript : MonoBehaviour {
         // Position
         PosX.text = pivot.pos.x.ToString("F1");
         PosY.text = pivot.pos.z.ToString("F1");
-        float alt = pivot.pos.y - Pivot.FRAMEHEIGHT;
+        float alt = pivot.pos.y;
         ALT.text = alt.ToString("F1");
 
         // Groundspeed
@@ -68,6 +69,11 @@ public class UIScript : MonoBehaviour {
         }
         GRSP.text = speed.ToString("F4");
         HEAD.text = heading.ToString("F4");
+
+        // COM
+        COMX.text = c.com.x.ToString("F4");
+        COMY.text = c.com.z.ToString("F4");
+        COMZ.text = c.com.y.ToString("F4");
 
     }
 

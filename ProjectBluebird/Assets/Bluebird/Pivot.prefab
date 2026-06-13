@@ -161,6 +161,7 @@ MonoBehaviour:
   roll: 0
   aVel: {x: 0, y: 0, z: 0}
   aAccel: {x: 0, y: 0, z: 0}
+  hzntl_speed: 0
 --- !u!54 &2620421194646711165
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -170,8 +171,8 @@ Rigidbody:
   m_GameObject: {fileID: 477798407491072512}
   serializedVersion: 5
   m_Mass: 0.06
-  m_LinearDamping: 1.2
-  m_AngularDamping: 3
+  m_LinearDamping: 1
+  m_AngularDamping: 2.8
   m_CenterOfMass: {x: 0, y: 0, z: 0.288}
   m_InertiaTensor: {x: 0.0002, y: 0.0002, z: 0.0002}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -222,11 +223,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputReceiver
   expected_vv: 0
-  expected_hztlv: 0
   expected_pitch: 0
   expected_roll: 0
   expected_yaw: 0
+  expected_hztlv: 0
   vv_speed: 0.25
+  hv_speed: 0.25
   angle_speed: 1
   vv_p: {fileID: 3945043783482440328, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   vv_n: {fileID: -6927824437303799129, guid: 052faaac586de48259a63d0c4782560b, type: 3}
@@ -236,6 +238,8 @@ MonoBehaviour:
   roll_n: {fileID: 5888360389643480995, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   yaw_p: {fileID: 4836935690459096929, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   yaw_n: {fileID: -404964344014762425, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  hv_p: {fileID: 0}
+  hv_n: {fileID: 0}
 --- !u!1 &1334415444289149152
 GameObject:
   m_ObjectHideFlags: 0

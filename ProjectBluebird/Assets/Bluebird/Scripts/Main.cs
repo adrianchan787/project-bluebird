@@ -8,12 +8,8 @@ public class Pivot : MonoBehaviour
     private Rigidbody rb;
 
     // COM calculations
-    private static readonly float LOCALCENTROID = (float)(-0.08f / Math.Sqrt(3)); // CHANGEABLE
-    private const float MOTORWEIGHT = 0.007f;
-    private const float FRAMEWEIGHT = 0.06f;
-    public static float FRAMEHEIGHT = 0.0525f;
-    public Vector3 com = new Vector3(0, (float) 0, LOCALCENTROID);
 
+    [SerializeField] private Config c;
     // Rotors
     public Rotor leftRotor;
     public Rotor rightRotor;
@@ -36,6 +32,7 @@ public class Pivot : MonoBehaviour
 
     public float hzntl_speed;
 
+    /*
     private Vector3 calcCOM() {
         Vector3 pitchMotorPos = pitchMotor.transform.localPosition; // Position Relative to drone
         float COMY = (MOTORWEIGHT * pitchMotorPos.y) / (FRAMEWEIGHT + 4 * MOTORWEIGHT);
@@ -43,6 +40,7 @@ public class Pivot : MonoBehaviour
         Vector3 COMOffset = new Vector3(COMX, COMY, 0);
         return com + COMOffset;
     }
+    */
 
     private static Vector3 calculateOrientation(Quaternion q)
     {
@@ -71,13 +69,15 @@ public class Pivot : MonoBehaviour
     }
 
     private void simulateMotor(Rotor rotor) {
-        rb.AddForceAtPosition(rotor.transform.up * rotor.thrustRatio * Rotor.MAXPOWER, rotor.transform.position, ForceMode.Force);
+        rb.AddForceAtPosition(rotor.transform.up * rotor.thrustRatio * c.MAX_PROP_THRUST, rotor.transform.position, ForceMode.Force);
         rb.AddTorque(rotor.transform.up * rotor.torque);
     }
 
     private void calculateLinear() {
+        Vector3 globalTemp = rb.linearVelocity;
         Vector3 temp = transform.InverseTransformDirection(rb.linearVelocity);
         temp.x = -temp.x;
+        temp.y = globalTemp.y;
         Vector3 velDelta = temp - vel;
         accel = velDelta / Time.fixedDeltaTime;
         vel = temp;
@@ -93,7 +93,8 @@ public class Pivot : MonoBehaviour
 
     void Start() {
         rb = GetComponent<Rigidbody>();
-        rb.centerOfMass = com;
+        rb.centerOfMass = c.com;
+        rb.mass = c.WEIGHT;
         vel = rb.linearVelocity;
         aVel = rb.angularVelocity;
     }
@@ -112,5 +113,9 @@ public class Pivot : MonoBehaviour
         Vector3 totalInputTorque = rb.GetAccumulatedTorque();
         Vector3 hzntlVelo = new Vector3(vel.x, 0, vel.z);
         hzntl_speed = (float) Math.Sqrt(hzntlVelo.sqrMagnitude);
+        rb.centerOfMass = c.com;
+        rb.mass = c.WEIGHT;
+        rb.linearDamping = c.LINEAR_DRAG;
+        rb.angularDamping = c.ANGULAR_DRAG;
     }
 }
