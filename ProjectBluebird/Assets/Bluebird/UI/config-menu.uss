@@ -1,0 +1,10 @@
+:root {
+    background-color: rgba(34, 47, 53, 0.89);
+}
+
+.panel {
+    width: 90%;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+}

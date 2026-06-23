@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Bluebird/UI/config-menu.uss?fileID=7433441132597879392&amp;guid=5b71358cf3f7f0a42a4e09643d82ef15&amp;type=3#config-menu"/>
+    <ui:VisualElement name="Panel" class="panel" style="flex-grow: 1; align-items: center; width: 90%; height: 85%; justify-content: flex-end; align-content: flex-start; flex-basis: 90%;"/>
+</ui:UXML>

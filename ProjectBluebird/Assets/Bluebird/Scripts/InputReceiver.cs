@@ -17,17 +17,17 @@ public class InputReceiver : MonoBehaviour
     [SerializeField] private float angle_speed = 1f;
 
     [Header("Controls")]
-    public InputActionReference vv_p;
-    public InputActionReference vv_n;
-    public InputActionReference pitch_p;
-    public InputActionReference pitch_n;
-    public InputActionReference roll_p;
-    public InputActionReference roll_n;
-    public InputActionReference yaw_p;
-    public InputActionReference yaw_n;
+    public InputActionReference q_p;
+    public InputActionReference q_n;
+    public InputActionReference w_p;
+    public InputActionReference w_n;
+    public InputActionReference e_p;
+    public InputActionReference e_n;
+    public InputActionReference r_p;
+    public InputActionReference r_n;
 
-    public InputActionReference hv_p;
-    public InputActionReference hv_n;
+    public InputActionReference t_p;
+    public InputActionReference t_n;
 
     void Start()
     {
@@ -36,30 +36,30 @@ public class InputReceiver : MonoBehaviour
 
     void OnEnable()
     {
-        SubscribeAction(vv_p, OnVvP);
-        SubscribeAction(vv_n, OnVvN);
-        SubscribeAction(pitch_p, OnPitchP);
-        SubscribeAction(pitch_n, OnPitchN);
-        SubscribeAction(roll_p, OnRollP);
-        SubscribeAction(roll_n, OnRollN);
-        SubscribeAction(yaw_p, OnYawP);
-        SubscribeAction(yaw_n, OnYawN);
-        SubscribeAction(hv_p, OnHvP);
-        SubscribeAction(hv_n, OnHvN);     
+        SubscribeAction(t_p, OnVvP);
+        SubscribeAction(t_n, OnVvN);
+        SubscribeAction(q_p, OnPitchP);
+        SubscribeAction(q_n, OnPitchN);
+        SubscribeAction(e_p, OnRollP);
+        SubscribeAction(e_n, OnRollN);
+        SubscribeAction(w_p, OnYawP);
+        SubscribeAction(w_n, OnYawN);
+        SubscribeAction(r_p, OnHvP);
+        SubscribeAction(r_n, OnHvN);     
     }
 
     void OnDisable()
     {
-        UnsubscribeAction(vv_p, OnVvP);
-        UnsubscribeAction(vv_n, OnVvN);
-        UnsubscribeAction(pitch_p, OnPitchP);
-        UnsubscribeAction(pitch_n, OnPitchN);
-        UnsubscribeAction(roll_p, OnRollP);
-        UnsubscribeAction(roll_n, OnRollN);
-        UnsubscribeAction(yaw_p, OnYawP);
-        UnsubscribeAction(yaw_n, OnYawN);
-        UnsubscribeAction(hv_p, OnHvP);
-        UnsubscribeAction(hv_n, OnHvN);   
+        UnsubscribeAction(t_p, OnVvP);
+        UnsubscribeAction(t_n, OnVvN);
+        UnsubscribeAction(q_p, OnPitchP);
+        UnsubscribeAction(q_n, OnPitchN);
+        UnsubscribeAction(e_p, OnRollP);
+        UnsubscribeAction(e_n, OnRollN);
+        UnsubscribeAction(w_p, OnYawP);
+        UnsubscribeAction(w_n, OnYawN);
+        UnsubscribeAction(r_p, OnHvP);
+        UnsubscribeAction(r_n, OnHvN); 
     }
 
     private void OnVvP(InputAction.CallbackContext ctx) => expected_vv += vv_speed;
@@ -108,7 +108,6 @@ public class InputReceiver : MonoBehaviour
                 expected_vv = 0.0f;
                 expected_pitch = 0.0f;
                 expected_roll = 0.0f;
-                expected_yaw = 0.0f;
                 expected_hztlv = 0.0f;
             }
         }

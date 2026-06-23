@@ -88,7 +88,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "VV_p",
+                    "name": "q_p",
                     "type": "Value",
                     "id": "10eae6e9-139d-46ab-b430-f2bd574dd097",
                     "expectedControlType": "",
@@ -97,7 +97,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "HV_p",
+                    "name": "t_p",
                     "type": "Value",
                     "id": "c16338d1-0a75-4160-bff7-b9ee2e15c9e8",
                     "expectedControlType": "",
@@ -106,7 +106,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "P_p",
+                    "name": "e_p",
                     "type": "Value",
                     "id": "0bfe4af8-a246-497e-8a60-8118b0ef0740",
                     "expectedControlType": "",
@@ -115,7 +115,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "R_p",
+                    "name": "r_p",
                     "type": "Value",
                     "id": "244ebe9b-9aee-4004-a3a7-2e1de80c54ef",
                     "expectedControlType": "",
@@ -124,7 +124,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Y_p",
+                    "name": "w_p",
                     "type": "Value",
                     "id": "ea296b14-6ab5-4e53-926f-bf8ff5af610c",
                     "expectedControlType": "",
@@ -133,7 +133,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "VV_n",
+                    "name": "q_n",
                     "type": "Value",
                     "id": "13a6e616-9b9e-4fc5-bb62-53ac40866267",
                     "expectedControlType": "",
@@ -142,7 +142,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "P_n",
+                    "name": "w_n",
                     "type": "Value",
                     "id": "8ba1a3c2-7857-492e-8125-b7625afbad7d",
                     "expectedControlType": "",
@@ -151,7 +151,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "R_n",
+                    "name": "e_n",
                     "type": "Value",
                     "id": "93c08acd-530a-43b4-ad15-828f1b5bed87",
                     "expectedControlType": "",
@@ -160,7 +160,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Y_n",
+                    "name": "r_n",
                     "type": "Value",
                     "id": "3e684f80-40e8-40f1-b9e9-db8a2f6ee95d",
                     "expectedControlType": "",
@@ -169,7 +169,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "HV_n",
+                    "name": "t_n",
                     "type": "Value",
                     "id": "88060954-967e-488f-9d55-3814732046f5",
                     "expectedControlType": "",
@@ -571,7 +571,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "VV_p",
+                    "action": "q_p",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -582,7 +582,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "HV_p",
+                    "action": "t_p",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -593,7 +593,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "P_p",
+                    "action": "e_p",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -604,7 +604,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "R_p",
+                    "action": "r_p",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -615,7 +615,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Y_p",
+                    "action": "w_p",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -626,7 +626,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "VV_n",
+                    "action": "q_n",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -637,7 +637,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "P_n",
+                    "action": "w_n",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -648,7 +648,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "R_n",
+                    "action": "e_n",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -659,7 +659,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Y_n",
+                    "action": "r_n",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -670,7 +670,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "HV_n",
+                    "action": "t_n",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

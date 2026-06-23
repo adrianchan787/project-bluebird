@@ -158,6 +158,7 @@ public class FlightController : MonoBehaviour
             integratedVYawError = 0f;
             integratedVPitchError = 0f;
             integratedVRollError = 0f;
+            integratedVertVeloError = 0f;
             expected_vv = ir.expected_vv;
             expected_hztlv = ir.expected_hztlv;
             expected_pitch = ir.expected_pitch;

@@ -10,6 +10,7 @@ public class Pivot : MonoBehaviour
     // COM calculations
 
     [SerializeField] private Config c;
+    
     // Rotors
     public Rotor leftRotor;
     public Rotor rightRotor;

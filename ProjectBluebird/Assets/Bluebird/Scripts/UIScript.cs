@@ -6,7 +6,9 @@ public class UIScript : MonoBehaviour {
     [SerializeField] private Pivot body;
     [SerializeField] private Config c;
 
-    [SerializeField] private TMP_InputField LT, RT, PT, TT, VV, VA, Yaw, Pitch, Roll, AVYaw, AVPitch, AVRoll, AAYaw, AAPitch, AARoll, PosX, PosY, ALT, GRSP, HEAD, SDEG, COMX, COMY, COMZ;
+    [SerializeField] private InputReceiver i;
+
+    [SerializeField] private TMP_InputField LT, RT, PT, TT, VV, VA, Yaw, Pitch, Roll, AVYaw, AVPitch, AVRoll, AAYaw, AAPitch, AARoll, PosX, PosY, ALT, GRSP, HEAD, SDEG, ExPitch, ExRoll, ExYaw, ExGrsp, ExVV;
 
 
     private void updateDashboard(Pivot pivot) {
@@ -70,10 +72,12 @@ public class UIScript : MonoBehaviour {
         GRSP.text = speed.ToString("F4");
         HEAD.text = heading.ToString("F4");
 
-        // COM
-        COMX.text = c.com.x.ToString("F4");
-        COMY.text = c.com.z.ToString("F4");
-        COMZ.text = c.com.y.ToString("F4");
+        // Expected
+        ExPitch.text = i.expected_pitch.ToString("F1");
+        ExYaw.text = i.expected_yaw.ToString("F1");
+        ExRoll.text = i.expected_roll.ToString("F1");
+        ExVV.text = i.expected_vv.ToString("F2");
+        ExGrsp.text = i.expected_hztlv.ToString("F2");
 
     }
 
